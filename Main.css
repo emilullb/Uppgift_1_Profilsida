@@ -1,0 +1,114 @@
+/*
+Syntaxen i CSS:
+Slectorer är tex Element, Class eller ID. Syntaxen skrivs såhär:
+Selector {
+    property 1: value;
+    property 2: value;
+}
+Exempel på html-element Selector (i detta fall <h1><h1/> från html) tex: 
+h1 {
+    color: blue;
+    font-style: italic;
+}
+Alla HTML element kan väljas som selectorer. Men den mest 
+användbara och vanliga är class. 
+
+Alla Element KAN ha ett attribut tilldelat dem (adress och döpning på vad det är?) 
+precis som i exemplet "href" till taggen <a/>. 
+Såhär: 
+<a href="index.html"> Hem <a/>
+tag      adress       döpning
+men om du gör en class ser det ut såhär:
+<h1 class="big-header"> Titel <h1/>
+tag        adress       döpning
+
+För att sen åberopa den specifika klassen istället för ett element så sätter 
+man en punkt före sitt valda Class namn (class="big-header") såhär:
+.big-header {
+    property: value;
+}
+*/
+body {
+    background-color: coral;
+    color: blue;
+    /*font-style: italic;*/
+}
+nav{
+    background-color: rgb(189, 186, 186);
+    color:rgb(255, 255, 255);
+    padding: 15px;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    
+    /*overflow {}*/
+}
+.Navigering-rubrik {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+article{
+    width: 60%;
+    float: left;
+}
+
+aside{
+    
+    /*background-color: rgb(189, 186, 186);*/
+    width: 30%;
+    float: right;
+    /*border-width: 2px;
+    border-style: solid;
+    border-color: black;*/
+    overflow: hidden;
+}
+
+img{
+    width: 300px;
+}
+
+.StoraGolfMinionen {
+    width: 1px;
+}
+
+/*thead{
+    background-color: rgb(189, 186, 186);
+    border:black;
+    border-width: 1xp;
+    border-style: solid;
+}*/
+table {
+    border-collapse: collapse;
+  }
+th, td {
+    background-color: rgb(189, 186, 186);
+    border:black;
+    border-width: 0.7px;
+    border-style: solid;
+    text-align:left;
+}
+.btn {
+    /*padding: 10px;*/
+    background-color: rgb(184, 180, 180);
+}
+.btn-1 { background-color: green; }
+.btn-2 { background-color: blue; }
+.btn-3 { background-color: purple; }
+
+.box{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    margin: 50px;
+    border: 10px solid black;
+    background-color: red;
+}
+
+footer{
+    background-color: rgb(189, 186, 186);
+    padding: 15px;
+    clear: both;
+}
